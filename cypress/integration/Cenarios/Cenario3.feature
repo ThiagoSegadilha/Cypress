@@ -6,12 +6,16 @@ Funcionalidade: Verificar se a soma dos valores está acima de 10 milhões Somat
   Preciso checar a mesagem após preencher tudo
 
   Contexto:
-    Dado que estou na página de login
+    Dado que estou autenticado como cliente externo
+    E clico no icone de financiamentos
     E vejo a tela de financiamento
 
 #    @focus
   Cenário: deve verificar se a soma dos valores está acima de 10 milhões Somatório dos valores de cada cnpj
-    Dado que estou autenticado como cliente externo
-    Quando clico no icone de financiamentos
-    E vejo a tela de financiamento
-    E preencho com 3 cnpj diferentes
+    Dado que preencho 3 clientes diferentes
+    Então verifico a mensagem confirmando o valor acima de 10 milhões
+
+    #    @focus
+  Cenário: deve verificar se a soma dos valores está abaixo de 10 milhões Somatório dos valores de cada cnpj
+    Dado que preencho 3 clientes diferentes
+    Então verifico a mensagem confirmando o valor abaixo de 10 milhões
