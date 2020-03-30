@@ -26,13 +26,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/habilitacao/habilitacao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Thiago\Documents\git\Cypress\cypress\integration\common" />
-    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -60,8 +55,6 @@
       <workItem from="1579464210211" duration="848000" />
       <workItem from="1579468853513" duration="600000" />
       <workItem from="1579602238445" duration="597000" />
-      <workItem from="1585565231154" duration="998000" />
-      <workItem from="1585582225014" duration="3474000" />
     </task>
     <servers />
   </component>
@@ -69,17 +62,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1512" y="181" key="#Inspections" timestamp="1585582760446">
+    <state x="1512" y="181" key="#Inspections" timestamp="1579399082565">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1512" y="181" key="#Inspections/0.0.2560.1040@0.0.2560.1040" timestamp="1585582760446" />
-    <state x="1700" y="274" key="FileChooserDialogImpl" timestamp="1585585276261">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1700" y="274" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1585585276261" />
-    <state x="1302" y="103" key="new project wizard" timestamp="1585585044409">
-      <screen x="0" y="0" width="2560" height="1040" />
-    </state>
-    <state x="1302" y="103" key="new project wizard/0.0.2560.1040@0.0.2560.1040" timestamp="1585585044409" />
+    <state x="1512" y="181" key="#Inspections/0.0.2560.1040@0.0.2560.1040" timestamp="1579399082565" />
   </component>
 </project>
