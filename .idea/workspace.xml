@@ -26,8 +26,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/integration/common" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Thiago\Documents\git\Cypress\cypress\integration\common" />
+      <recent name="C:\Users\Thiago\Documents\git\Cypress\cypress\integration\common\helpers" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -55,7 +61,7 @@
       <workItem from="1579464210211" duration="848000" />
       <workItem from="1579468853513" duration="600000" />
       <workItem from="1579602238445" duration="597000" />
-      <workItem from="1585591550036" duration="9000" />
+      <workItem from="1585591550036" duration="1584000" />
     </task>
     <servers />
   </component>
