@@ -12,6 +12,6 @@ Funcionalidade: Verificar se a soma dos valores está acima de 10 milhões Somat
 #    @focus
   Cenário: deve verificar se a soma dos valores está acima de 10 milhões Somatório dos valores de cada cnpj
     Dado que estou autenticado como cliente externo
-    Quando preencho as informações de login
-    E tento entrar no sistema
-    Então vejo o nome do usuário logado no cabeçalho
+    Quando clico no icone de financiamentos
+    E vejo a tela de financiamento
+    E preencho com 3 cnpj diferentes
