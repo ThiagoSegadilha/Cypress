@@ -2,7 +2,7 @@
 
 describe ("Obrigatoriedade dos campos", () => {
     beforeEach(() => {
-        cy.login()
+        cy.login_externo()
         cy.abrirHabilitacao()
     })
 
