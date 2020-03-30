@@ -5,12 +5,12 @@ Se tiver qualquer dúvida falem comigo.
 
 Cenário 1:
 Logar com 
-CNPJ: 00.622.416/0001-41
-Usuário: teste
-Senha: Padaria123
+*CNPJ
+*Usuário
+*Senha
 
-Usuário: teste2
-Senha: Padaria123
+Usuário: *****
+Senha: *****
 
 Clicar no ícone de financiamentos.
 
@@ -52,8 +52,6 @@ Tem que aparecer o histórico lá em cima
 
 Cenário 8:
 Não permitir informar CNPJ que não seja matriz.
-Exemplo:91.501.783/0008-19
 
 Cenário 8:
 Não permitir informar CNPJ que não seja válido.
-Exemplo:91.501.783/1118-88
