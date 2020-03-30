@@ -18,7 +18,9 @@
     "url": "https://github.com/ThiagoSegadilha/Cypress/issues"
   },
   "homepage": "https://github.com/ThiagoSegadilha/Cypress#readme",
-  "dependencies": {},
+  "dependencies": {
+    "cypress-file-upload": "^4.0.4"
+  },
   "devDependencies": {
     "cypress": "^4.3.0",
     "cypress-cucumber-preprocessor": "^2.0.1"
