@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import loc from './locators'
+
+Cypress.Commands.add('login', () => {
+    cy.visit('portal-h.bndes.gov.br/habilitacao')
+    cy.get(loc.LOGIN.CNPJOUCPF).type('00622416000141')
+    cy.get(loc.LOGIN.USUARIO).type('teste')
+    cy.get(loc.LOGIN.SENHA).type('Padaria123')
+    cy.get(loc.LOGIN.BTN_ENTRAR).click()
+})
+
+Cypress.Commands.add('abrirHabilitacao', () => {    
+    cy.get('[data-testid=botao-ver-processo]').click()
+})
