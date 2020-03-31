@@ -1,61 +1,44 @@
 import {When, Given, Then} from "cypress-cucumber-preprocessor/steps";
 import {Cenario3Helper} from "./cenario3Helper";
 import {FormHelper} from "../../common/helpers/formHelper";
+import {DadosFalsosHelper} from "../../common/helpers/dadosFalsosHelper";
 
-Given(/^que crio (\d+) cliente(?:s?)$/, (quantidade) => {
+Given(/^que crio (\d+) cliente(?:s?) com somatorio acima de 10 milhões$/, (quantidade) => {
     var i;
-    for(i = 1; i < quantidade; i++) {
-        cy.get('.ng-untouched.ng-star-inserted > .btn')
-            .click()
+    for(i = 0; i < quantidade; i++) {
+        cy.get('[data-testid=cliente]')
+            .last()
+            .within(() => {
+                const cnpjAleatorio = DadosFalsosHelper.cnpj();
+                FormHelper.preencherFormulario({
+                    cnpj: cnpjAleatorio,
+                    valor: 600000000,
+                })
+            })
+        if(i+1 < quantidade) {
+            cy.get('.ng-invalid > .btn')
+                .click()
+        }
     }
 })
 
-When(/^preencho os (\d+) cliente(?:s?) com somatorio acima de 10 milhões$/, () => {
-    cy.get('[data-testid=clientes]')
-        .find('[data-testid=cliente]')
-        .then(qtd => {
-            var i, perfil;
-            for(i = 0; i < qtd.length; i++) {
-                switch (i) {
-                    case 0:
-                        perfil = Cenario3Helper.PERFIL_1;
-                        break;
-                    case 1:
-                        perfil = Cenario3Helper.PERFIL_2;
-                        break;
-                    case 2:
-                        perfil = Cenario3Helper.PERFIL_3;
-                        break;
-                }
-
-            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=cnpj]', perfil.cnpj);
-            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(3) > .form-group > [data-testid=valor]', perfil.valor);
-            }
-        })
-})
-
-When(/^preencho os (\d+) cliente(?:s?) com somatorio abaixo de 10 milhões$/, () => {
-    cy.get('[data-testid=clientes]')
-        .find('[data-testid=cliente]')
-        .then(qtd => {
-            var i, perfil;
-            for(i = 0; i < qtd.length; i++) {
-                switch (i) {
-                    case 2:
-                        perfil = Cenario3Helper.PERFIL_1;
-                        break;
-                    case 1:
-                        perfil = Cenario3Helper.PERFIL_2;
-                        break;
-                    case 0:
-                        perfil = Cenario3Helper.PERFIL_3;
-                        break;
-                }
-
-                FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=cnpj]', perfil.cnpj);
-                FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(3) > .form-group > [data-testid=valor]', perfil.valor);
-            }
-        })
+Given(/^que crio (\d+) cliente(?:s?) com somatorio abaixo de 10 milhões$/, (quantidade) => {
+    var i;
+    for(i = 0; i < quantidade; i++) {
+        cy.get('[data-testid=cliente]')
+            .last()
+            .within(() => {
+                const cnpjAleatorio = DadosFalsosHelper.cnpj();
+                FormHelper.preencherFormulario({
+                    cnpj: cnpjAleatorio,
+                    valor: 400000000,
+                })
+            })
+        if(i+1 < quantidade) {
+            cy.get('.ng-invalid > .btn')
+                .click()
+        }
+    }
 })
 
 Then(/^verifico a mensagem confirmando o valor acima de 10 milhões$/, () => {
