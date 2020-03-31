@@ -5,8 +5,8 @@ When(/^clico no icone de financiamentos$/, () => {
         .click()
 })
 
-When(/^E vejo a tela de financiamento$/, () => {
-    cy.get('h3').contains('Solicitações de Financiamentos')
+When(/^vejo a tela de financiamento$/, () => {
+    cy.get('h3').contains("Financiamentos")
 })
 
 When(/^clico no botão de solicitar financiamento$/, () => {
