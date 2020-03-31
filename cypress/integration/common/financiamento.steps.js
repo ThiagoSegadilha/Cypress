@@ -3,7 +3,7 @@ import loc from "../../support/locators";
 
 
 When(/^clico no icone de financiamentos$/, () => {
-    cy.get('.panel > #bn-navbar > .nav > :nth-child(2) > .nav-link > .d-flex > .ng-tns-c5-2 > .fa')
+    cy.get('.panel > #bn-navbar > .nav > :nth-child(2) > .nav-link')
         .click()
 })
 

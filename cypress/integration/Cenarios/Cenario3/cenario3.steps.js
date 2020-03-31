@@ -10,7 +10,7 @@ Given(/^que crio (\d+) cliente(?:s?)$/, (quantidade) => {
     }
 })
 
-When(/^preencho os (\d+) cliente(?:s?)$/, () => {
+When(/^preencho os (\d+) cliente(?:s?) com somatorio acima de 10 milhões$/, () => {
     cy.get('[data-testid=clientes]')
         .find('[data-testid=cliente]')
         .then(qtd => {
@@ -34,6 +34,34 @@ When(/^preencho os (\d+) cliente(?:s?)$/, () => {
         })
 })
 
+When(/^preencho os (\d+) cliente(?:s?) com somatorio abaixo de 10 milhões$/, () => {
+    cy.get('[data-testid=clientes]')
+        .find('[data-testid=cliente]')
+        .then(qtd => {
+            var i, perfil;
+            for(i = 0; i < qtd.length; i++) {
+                switch (i) {
+                    case 2:
+                        perfil = Cenario3Helper.PERFIL_1;
+                        break;
+                    case 1:
+                        perfil = Cenario3Helper.PERFIL_2;
+                        break;
+                    case 0:
+                        perfil = Cenario3Helper.PERFIL_3;
+                        break;
+                }
+
+                FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=cnpj]', perfil.cnpj);
+                FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(3) > .form-group > [data-testid=valor]', perfil.valor);
+            }
+        })
+})
+
 Then(/^verifico a mensagem confirmando o valor acima de 10 milhões$/, () => {
-    cy.log('[data-testid=valorTotal]')
+    cy.get('[data-testid=erro-valor-minimo]').should('not.exist')
+})
+
+Then(/^verifico a mensagem confirmando o valor abaixo de 10 milhões$/, () => {
+    cy.get('[data-testid=erro-valor-minimo]').should('exist')
 })
