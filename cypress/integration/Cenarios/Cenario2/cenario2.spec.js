@@ -18,3 +18,28 @@ When (/preencho todos os campos/, () => {
     cy.get('[data-testid=opcao-sim-nao] > :nth-child(2)').click()
     cy.get('[data-testid=descricaoGarantias]').type("Garantia dada pelo agente financeiro")
 })
+
+when (/limpo o campo cnpj/, () => {
+    cy.get('[data-testid=cnpj]').clear()
+})
+
+When (/vejo a mensagem de campo inválido/, () => {
+    cy.get('.invalid-feedback')
+        .should('be.visible')
+        .contains('informe este campo')
+})
+
+When (/altero o valor para abaixo de 10 milhões/, () => {
+    cy.get('[data-testid=valor]')
+        .clear()
+        .type("500000000")
+})
+
+When (/vejo a mensagem de valor mínimo/, () => {
+    cy.get('[data-testid=erro-valor-minimo]')
+        .contains("O financiamento deve estar acima do valor minimo")
+})
+
+when (/limpo o campo valor/, () => {
+    cy.get('[data-testid=valor]').clear()
+})
