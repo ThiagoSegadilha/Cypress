@@ -1,5 +1,33 @@
-import {When} from "cypress-cucumber-preprocessor/steps";
+import {When, Given} from "cypress-cucumber-preprocessor/steps";
 
-When(/^que estou autenticado como cliente externo$/, () => {
-    cy.visit('https://www.google.com/')
+Given(/^que crio (\d+) cliente(?:s?)$/, (quantidade) => {
+    var i;
+    for(i = 1; i < quantidade; i++) {
+        cy.get('.ng-untouched.ng-star-inserted > .btn')
+            .click()
+    }
+})
+
+When(/^preencho os (\d+) cliente(?:s?)$/, () => {
+    cy.get('[data-testid=clientes]')
+        .find('[data-testid=cliente]')
+        .then(qtd => {
+            var i, perfil;
+            for(i = 0; i < qtd.length; i++) {
+                switch (i) {
+                    case 0:
+                        perfil = Cenario3Helper.PERFIL_1;
+                        break;
+                    case 1:
+                        perfil = Cenario3Helper.PERFIL_2;
+                        break;
+                    case 2:
+                        perfil = Cenario3Helper.PERFIL_3;
+                        break;
+                }
+
+            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=cnpj]', perfil.cnpj);
+            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=valor]', perfil.valor);
+            }
+        })
 })

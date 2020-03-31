@@ -28,6 +28,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cypress/integration/common/helpers" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -36,6 +37,23 @@
       <recent name="C:\Users\Thiago\Documents\git\Cypress\cypress\support" />
       <recent name="C:\Users\Thiago\Documents\git\Cypress\cypress\integration\common" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cypress:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="cypress:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.cypress:open" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -79,6 +97,26 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1650" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1585602207459" />
+    <state width="1234" height="265" key="GridCell.Tab.0.bottom" timestamp="1585673211084">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="265" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1585673211084" />
+    <state width="1234" height="265" key="GridCell.Tab.0.center" timestamp="1585673211084">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="265" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1585673211084" />
+    <state width="1234" height="265" key="GridCell.Tab.0.left" timestamp="1585673211084">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="265" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1585673211084" />
+    <state width="1234" height="265" key="GridCell.Tab.0.right" timestamp="1585673211084">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1234" height="265" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1585673211084" />
+    <state x="1421" y="165" key="SettingsEditor" timestamp="1585671021348">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1421" y="165" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1585671021348" />
     <state x="1606" y="264" width="627" height="518" key="find.popup" timestamp="1585602404918">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

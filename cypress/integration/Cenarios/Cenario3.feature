@@ -9,10 +9,12 @@ Funcionalidade: Verificar se a soma dos valores está acima de 10 milhões Somat
     Dado que estou autenticado como cliente externo
     E clico no icone de financiamentos
     E vejo a tela de financiamento
+    E clico no botão de solicitar financiamento
 
 #    @focus
   Cenário: deve verificar se a soma dos valores está acima de 10 milhões Somatório dos valores de cada cnpj
-    Dado que preencho 3 clientes diferentes
+    Dado que crio 3 clientes
+    E preencho os 3 clientes
     Então verifico a mensagem confirmando o valor acima de 10 milhões
 
     #    @focus
