@@ -19,7 +19,6 @@ When (/clico no botão salvar/, () => {
     cy.get('[data-testid=salvar]').click()
 })
 
-
 Then (/vejo botão de enviar habilitado/, () => {
     cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).should("not.have.css", "disabled")  
 })

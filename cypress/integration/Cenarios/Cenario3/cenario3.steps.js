@@ -1,4 +1,4 @@
-import {When, Given} from "cypress-cucumber-preprocessor/steps";
+import {When, Given, Then} from "cypress-cucumber-preprocessor/steps";
 import {Cenario3Helper} from "./cenario3Helper";
 import {FormHelper} from "../../common/helpers/formHelper";
 
@@ -29,7 +29,11 @@ When(/^preencho os (\d+) cliente(?:s?)$/, () => {
                 }
 
             FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=cnpj]', perfil.cnpj);
-            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(2) > .form-group > [data-testid=valor]', perfil.valor);
+            FormHelper.preencherCampo(':nth-child('+(i+1)+') > .card-body > :nth-child(3) > .form-group > [data-testid=valor]', perfil.valor);
             }
         })
+})
+
+Then(/^verifico a mensagem confirmando o valor acima de 10 milhões$/, () => {
+    cy.log('[data-testid=valorTotal]')
 })

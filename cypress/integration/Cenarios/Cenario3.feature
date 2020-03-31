@@ -13,8 +13,8 @@ Funcionalidade: Verificar se a soma dos valores está acima de 10 milhões Somat
 
   @focus
   Cenário: deve verificar se a soma dos valores está acima de 10 milhões Somatório dos valores de cada cnpj
-    Dado que crio 3 clientes
-    E preencho os 3 clientes
+    Dado que crio 2 clientes
+    E preencho os 2 clientes
     Então verifico a mensagem confirmando o valor acima de 10 milhões
 
     #    @focus
