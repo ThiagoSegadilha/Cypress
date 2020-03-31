@@ -1,4 +1,6 @@
 import {When, Given} from "cypress-cucumber-preprocessor/steps";
+import {Cenario3Helper} from "./cenario3Helper";
+import {FormHelper} from "../../common/helpers/formHelper";
 
 Given(/^que crio (\d+) cliente(?:s?)$/, (quantidade) => {
     var i;
