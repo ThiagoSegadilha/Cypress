@@ -11,7 +11,7 @@ Funcionalidade: Verificar se a soma dos valores está acima de 10 milhões Somat
     E vejo a tela de financiamento
     E clico no botão de solicitar financiamento
 
-#    @focus
+  @focus
   Cenário: deve verificar se a soma dos valores está acima de 10 milhões Somatório dos valores de cada cnpj
     Dado que crio 3 clientes
     E preencho os 3 clientes
