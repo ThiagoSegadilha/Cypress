@@ -7,6 +7,9 @@ const locators = {
     },
     FORM_FINANCIAMENTO: {
         BTN_ENVIAR: '.d-flex > botao-workflow-processo > botao-workflow.ng-star-inserted > .ng-star-inserted > .btn'
+    },
+    ENVIAR_SOLICITAÇÃO: {
+        BTN_ENVIAR: '.modal-footer > .btn'
     }
 }
 export default locators;
