@@ -53,5 +53,5 @@ Tem que aparecer o histórico lá em cima
 Cenário 8:
 Não permitir informar CNPJ que não seja matriz.
 
-Cenário 8:
+Cenário 9:
 Não permitir informar CNPJ que não seja válido.
