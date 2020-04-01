@@ -24,9 +24,9 @@ When (/clico no botão salvar/, () => {
 })
 
 Then (/vejo botão de enviar habilitado/, () => {
-    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).should("not.have.css", "disabled")  
+    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).should("not.have.attr", "disabled")  
 })
 
 Then (/vejo botão de enviar desabilitado/, () => {
-    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).should("have.css", "disabled")  
+    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).should("have.attr", "disabled")  
 })
