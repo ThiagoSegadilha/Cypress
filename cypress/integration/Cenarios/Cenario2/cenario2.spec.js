@@ -4,10 +4,6 @@ import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
 import loc from "../../../support/locators";
 import {UsuarioHelper} from "../../common/helpers/usuarioHelper";
 
-Given (/vejo o formulário de pedido de financiamento/, () => {
-    cy.get('[data-testid=clientes]').contains("Clientes")
-})
-
 When (/preencho todos os campos/, () => {
     cy.get('[data-testid=cnpj]').type(UsuarioHelper.CLIENTE_EXTERNO.cnpj)
     cy.get('[data-testid=valor]').type("1000000000")
