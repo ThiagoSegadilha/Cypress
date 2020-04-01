@@ -1,8 +1,8 @@
 # language: pt
 @fast
-Funcionalidade: Deve abrir uma solicitação "Em análise"
+Funcionalidade: Deve abrir uma solicitação "Concluído"
   Como usuário do sistema
-  Preciso verificar se não há nenhum campo ou botão habilitado
+  Preciso verificar se não há nenhum campo habilitado
   Preciso checar se há historico na tela
 
   Contexto:
@@ -12,7 +12,6 @@ Funcionalidade: Deve abrir uma solicitação "Em análise"
 
   @focus
   Cenário: deve verificar se há histórico e se o formulário esta desabilitado para solicitações em análise
-    Dado que abri uma solicitação em análse
+    Dado que abri uma solicitação devolvida
     E verifico se o formulário esta desabilitado
-    E se o botão salvar está desabilitado
     E se existe histórico

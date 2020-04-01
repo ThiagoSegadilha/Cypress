@@ -12,7 +12,8 @@ Funcionalidade: Deve abrir uma solicitação "Devolvido"
     E vejo a tela de financiamento
 
   @focus
-  Cenário: deve verificar se há histórico e se o formulário esta desabilitado para solicitações em análise
+  Cenário: deve verificar se há histórico e se o formulário esta habilitado para solicitações devolvidas
     Dado que abri uma solicitação devolvida
-    E verifico se o formulário esta desabilitado
+    E verifico se o formulário está habilitado
+    E se o botão salvar está habilitado
     E se existe histórico

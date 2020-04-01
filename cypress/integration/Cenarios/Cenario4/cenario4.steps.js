@@ -20,6 +20,10 @@ When(/^verifico se o formulário esta desabilitado$/, () => {
     cy.get('[data-testid=descricaoGarantias]').should('exist','readonly')
 })
 
+When(/^se o botão salvar está desabilitado$/, () => {
+    cy.get('solicitacao.ng-star-inserted > :nth-child(1) > div').should('exist','disabled')
+})
+
 When(/^se existe histórico$/, () => {
     cy.get('.re-align').should('exist')
 })
