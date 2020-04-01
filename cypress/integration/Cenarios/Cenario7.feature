@@ -11,7 +11,7 @@ Funcionalidade: Deve abrir uma solicitação "Concluído"
     E vejo a tela de financiamento
 
   @focus
-  Cenário: deve verificar se há histórico e se o formulário esta desabilitado para solicitações em análise
-    Dado que abri uma solicitação devolvida
+  Cenário: deve verificar se há histórico e se o formulário esta desabilitado para solicitações concluidas
+    Dado que abri uma solicitação concluida
     E verifico se o formulário esta desabilitado
     E se existe histórico

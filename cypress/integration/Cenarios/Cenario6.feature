@@ -1,6 +1,6 @@
 # language: pt
 @fast
-Funcionalidade: Deve abrir uma solicitação "Devolvido"
+Funcionalidade: Deve abrir uma solicitação "Pendente"
   Como usuário do sistema
   Preciso verificar se todos os campos estão habilitado
   Preciso verificar se o botão salvar está habilitado
@@ -12,8 +12,8 @@ Funcionalidade: Deve abrir uma solicitação "Devolvido"
     E vejo a tela de financiamento
 
   @focus
-  Cenário: deve verificar se há histórico e se o formulário esta habilitado para solicitações devolvidas
-    Dado que abri uma solicitação devolvida
+  Cenário: deve verificar se há histórico e se o formulário esta habilitado para solicitações pendentes
+    Dado que abri uma solicitação pendente
     E verifico se o formulário está habilitado
     E se o botão salvar está habilitado
     E se existe histórico

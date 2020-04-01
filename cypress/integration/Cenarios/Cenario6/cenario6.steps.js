@@ -1,8 +1,8 @@
 import {When, Given, Then} from "cypress-cucumber-preprocessor/steps";
 
-Given(/^que abri uma solicitação devolvida$/, () => {
+Given(/^que abri uma solicitação pendente$/, () => {
     cy.get('[data-testid=nomeEstadoAtual]')
-        .contains("devolvido")
+        .contains("pendente")
         .last()
         .click()
 })
