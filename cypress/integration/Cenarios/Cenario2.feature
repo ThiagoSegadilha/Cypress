@@ -10,7 +10,7 @@ Contexto:
     
 @focus
 Cenário: Deve preencher o formulário e os campos estarem válidos
-    Dado vejo o formulário de pedido de financiamento
+    Dado que vejo o formulário de pedido de financiamento
     E preencho todos os campos
     E clico no botão salvar
 #   Então vejo botão de enviar habilitado

@@ -1,6 +1,9 @@
 import {When} from "cypress-cucumber-preprocessor/steps";
 import loc from "../../support/locators";
 
+Given (/que vejo o formulário de pedido de financiamento/, () => {
+    cy.get('[data-testid=clientes]').contains("Clientes")
+})
 
 When(/^clico no icone de financiamentos$/, () => {
     cy.get('.panel > #bn-navbar > .nav > :nth-child(2) > .nav-link')
