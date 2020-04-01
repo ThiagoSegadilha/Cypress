@@ -1,5 +1,25 @@
 import {When, Given, Then} from "cypress-cucumber-preprocessor/steps";
 
 Given(/^que abri uma solicitação em análse$/, () => {
-    cy.get('[data-testid=nomeEstadoAtual]').contains("em análise").last().click()
+    cy.get('[data-testid=nomeEstadoAtual]')
+        .contains("em análise")
+        .last()
+        .click()
+})
+
+When(/^verifico se o formulário esta desabilitado$/, () => {
+    cy.get('[data-testid=cnpj]').should('exist','readonly')
+    cy.get('[data-testid=valor]').should('exist','readonly')
+    cy.get('[data-testid=empregosAntes]').should('exist','readonly')
+    cy.get('[data-testid=empregosDurante]').should('exist','readonly')
+    cy.get('[data-testid=empregosDepois]').should('exist','readonly')
+    cy.get('[data-testid=empregosComentario]').should('exist','readonly')
+    cy.get('[data-testid=sim]').should('exist','disabled')
+    cy.get('[data-testid=não]').should('exist','disabled')
+    cy.get('[data-testid=anexos]').should('exist','readonly')
+    cy.get('[data-testid=descricaoGarantias]').should('exist','readonly')
+})
+
+When(/^se existe histórico$/, () => {
+    cy.get('.re-align').should('exist')
 })
