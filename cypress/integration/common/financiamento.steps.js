@@ -19,12 +19,16 @@ When(/^clico no botão de solicitar financiamento$/, () => {
     cy.get('[data-testid=solicitarFinanciamento]').click()
 })
 
-When (/clico no botão salvar/, () => {
-    cy.get('[data-testid=salvar]').click({force: true})
+When (/vejo mensagem que formulário está salvo/, () => {
+    cy.get('[data-testid=ultimoSave]')
+        .should("be.visible")
+        .contains("Salvo há poucos segundos")
 })
 
 When (/clico no botão enviar/, () => {
-    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR).click()
+    cy.get(loc.FORM_FINANCIAMENTO.BTN_ENVIAR)
+        .first()
+        .click()
 })
 
 Then (/vejo botão de enviar habilitado/, () => {

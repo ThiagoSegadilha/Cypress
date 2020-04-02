@@ -6,7 +6,7 @@ const locators = {
         BTN_ENTRAR: '[data-testid=entrar]'
     },
     FORM_FINANCIAMENTO: {
-        BTN_ENVIAR: '.d-flex > botao-workflow-processo > botao-workflow.ng-star-inserted > .ng-star-inserted > .btn'
+        BTN_ENVIAR: '[data-testid=enviar]'
     },
     ENVIAR_SOLICITAÇÃO: {
         BTN_ENVIAR: '.modal-footer > .btn'

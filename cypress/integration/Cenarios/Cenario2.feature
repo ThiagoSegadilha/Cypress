@@ -12,16 +12,16 @@ Contexto:
 Cenário: Deve preencher o formulário e os campos estarem válidos
     Dado que vejo o formulário de pedido de financiamento
     E preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar habilitado
 
 #@focus
 Cenário: Botão enviar deve estar desabilitado se cnpj não for informado
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo cnpj
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
@@ -29,9 +29,9 @@ Cenário: Botão enviar deve estar desabilitado se cnpj não for informado
 Cenário: Botão enviar deve estar desabilitado se valor for menor que 10 milhões
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E altero o valor para abaixo de 10 milhões
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de valor mínimo
 
@@ -39,9 +39,9 @@ Cenário: Botão enviar deve estar desabilitado se valor for menor que 10 milhõ
 Cenário: Botão enviar deve estar desabilitado se valor não for informado
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo valor
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
@@ -49,9 +49,9 @@ Cenário: Botão enviar deve estar desabilitado se valor não for informado
 Cenário: Botão enviar deve estar desabilitado se quantidade de empregos antes não for informada
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo empregos antes
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
@@ -59,9 +59,9 @@ Cenário: Botão enviar deve estar desabilitado se quantidade de empregos antes 
 Cenário: Botão enviar deve estar desabilitado se quantidade de empregos durante não for informada
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo empregos durante
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
@@ -69,17 +69,17 @@ Cenário: Botão enviar deve estar desabilitado se quantidade de empregos durant
 Cenário: Botão enviar deve estar desabilitado se quantidade de empregos depois não for informada
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo empregos depois
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
-#@focus
+@focus
 Cenário: Botão enviar deve estar desabilitado se informação sobre possível licença ambiental não for informada
 
     Dado não informo sobre possível licença ambiental
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
 ####    E vejo a mensagem de campo inválido
 
@@ -87,8 +87,8 @@ Cenário: Botão enviar deve estar desabilitado se informação sobre possível 
 Cenário: Botão enviar deve estar desabilitado se descrição de garantia não for informada
 
     Dado preencho todos os campos
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     E limpo o campo descrição garantias
-    E clico no botão salvar
+    E vejo mensagem que formulário está salvo
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido

@@ -17,6 +17,6 @@ Cenário: Deve verificar todos os campos para ver se estão habilitados
 #@focus
 Cenário: O botão salvar deve estar desabilitado e só habilitar quando tiver qualquer mudança no formulário.
     Dado que vejo o formulário de pedido de financiamento
-    E verifico se botão salvar está desabilitado
+    E vejo botão de enviar desabilitado
     E preencho algum campo
-    Então vejo botão salvar habilitado
+    Então vejo botão de enviar habilitado
