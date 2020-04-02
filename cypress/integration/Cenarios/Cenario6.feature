@@ -15,5 +15,5 @@ Funcionalidade: Deve abrir uma solicitação "Pendente"
   Cenário: deve verificar se há histórico e se o formulário esta habilitado para solicitações pendentes
     Dado que abri uma solicitação pendente
     E verifico se o formulário está habilitado
-    E se o botão salvar está habilitado
+    E vejo mensagem que formulário está salvo
     E se existe histórico

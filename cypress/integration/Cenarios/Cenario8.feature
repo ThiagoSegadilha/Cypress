@@ -14,5 +14,5 @@ Funcionalidade: Deve abrir uma solicitação de financiamento e não permitir in
   @focus
   Cenário: deve verificar se há mensagem de erro após informar CNPJ que não seja matriz e salvar
     Dado que preenchi o formulario do cliente com um CNPJ que não seja matriz
-    E clico no botão salvar
-    Então vejo a mensagem de erro
+    E vejo a mensagem de erro
+    E vejo mensagem que formulário está salvo

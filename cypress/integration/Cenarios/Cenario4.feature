@@ -14,5 +14,4 @@ Funcionalidade: Deve abrir uma solicitação "Em análise"
   Cenário: deve verificar se há histórico e se o formulário esta desabilitado para solicitações em análise
     Dado que abri uma solicitação em análse
     E verifico se o formulário esta desabilitado
-    E se o botão salvar está desabilitado
     E se existe histórico
