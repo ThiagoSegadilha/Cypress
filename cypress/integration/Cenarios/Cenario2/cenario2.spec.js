@@ -2,17 +2,20 @@
 
 import {Given, When, Then} from "cypress-cucumber-preprocessor/steps";
 import loc from "../../../support/locators";
+import financiamentoJson from "../../../fixtures/financiamento.json"
 import {UsuarioHelper} from "../../common/helpers/usuarioHelper";
+import { FormHelper } from "../../common/helpers/formHelper";
 
 When (/preencho todos os campos/, () => {
-    cy.get('[data-testid=cnpj]').type(UsuarioHelper.CLIENTE_EXTERNO.cnpj)
+    FormHelper.preencherFormulario(financiamentoJson)
+    /* cy.get('[data-testid=cnpj]').type(UsuarioHelper.CLIENTE_EXTERNO.cnpj)
     cy.get('[data-testid=valor]').type("1000000000")
     cy.get('[data-testid=empregosAntes]').type("100")
     cy.get('[data-testid=empregosDurante]').type("90")
     cy.get('[data-testid=empregosDepois]').type("50")
     cy.get('[data-testid=empregosComentario]').type("Devido a pandemia")
     cy.get('[data-testid=opcao-sim-nao] > :nth-child(2)').click()
-    cy.get('[data-testid=descricaoGarantias]').type("Garantia dada pelo agente financeiro")
+    cy.get('[data-testid=descricaoGarantias]').type("Garantia dada pelo agente financeiro") */
 })
 
 When (/não informo sobre possível licença ambiental/, () => {
@@ -39,7 +42,7 @@ When (/altero o valor para abaixo de 10 milhões/, () => {
 
 When (/vejo a mensagem de valor mínimo/, () => {
     cy.get('[data-testid=erro-valor-minimo]')
-    .contains("O financiamento deve estar acima do valor minimo")
+    .contains("O financiamento deve estar acima do valor mínimo")
 })
 
 //Códigos para limpar os campos

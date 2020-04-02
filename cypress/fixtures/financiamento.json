@@ -1,0 +1,10 @@
+{
+    "cnpj": "00622416000141",
+    "valor": "1000000000",
+    "empregosAntes": "100",
+    "empregosDurante": "90",
+    "empregosDepois": "50",
+    "empregosComentario": "Devido a pandemia",
+    "requerLicencasAmbientais": "false",
+    "descricaoGarantias": "Garantia dada pelo agente financeiro"
+}

@@ -8,7 +8,7 @@ Contexto:
     E vejo a tela de financiamento
     E clico no botão de solicitar financiamento
     
-#@focus
+@focus
 Cenário: Deve preencher o formulário e os campos estarem válidos
     Dado que vejo o formulário de pedido de financiamento
     E preencho todos os campos
@@ -75,7 +75,7 @@ Cenário: Botão enviar deve estar desabilitado se quantidade de empregos depois
     Então vejo botão de enviar desabilitado
     E vejo a mensagem de campo inválido
 
-@focus
+#@focus
 Cenário: Botão enviar deve estar desabilitado se informação sobre possível licença ambiental não for informada
 
     Dado não informo sobre possível licença ambiental
