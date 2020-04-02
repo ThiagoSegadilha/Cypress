@@ -4,7 +4,7 @@ Given(/^que abri uma solicitação em análse$/, () => {
     cy.get('[data-testid=nomeEstadoAtual]')
         .contains("em análise")
         .last()
-        .click()
+        .click({force:true})
 })
 
 When(/^verifico se o formulário esta desabilitado$/, () => {
