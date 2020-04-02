@@ -19,9 +19,8 @@ When(/^clico no botão de solicitar financiamento$/, () => {
     cy.get('[data-testid=solicitarFinanciamento]').click()
 })
 
-When (/vejo mensagem que formulário está salvo/, () => {
+When (/^vejo mensagem que formulário está salvo$/, () => {
     cy.get('[data-testid=ultimoSave]')
-        .should("be.visible")
         .contains("Salvo há poucos segundos")
 })
 

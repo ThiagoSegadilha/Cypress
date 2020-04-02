@@ -8,7 +8,7 @@ Given(/^que preenchi o formulario do cliente com um CNPJ que não seja matriz$/,
     })
 })
 
-Then(/^vejo a mensagem de erro$/, () => {
+When(/^vejo a mensagem de erro$/, () => {
     cy.get('.col-sm > .ng-tns-c2-0')
         .contains("CNPJ informado deve ser da matriz da empresa.")
 })
