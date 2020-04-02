@@ -4,7 +4,7 @@ Given(/^que abri uma solicitação pendente$/, () => {
     cy.get('[data-testid=nomeEstadoAtual]')
         .contains("pendente")
         .last()
-        .click()
+        .click({force:true})
 })
 
 When(/^verifico se o formulário está habilitado$/, () => {

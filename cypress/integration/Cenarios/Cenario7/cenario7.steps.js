@@ -4,7 +4,7 @@ Given(/^que abri uma solicitação concluida$/, () => {
     cy.get('[data-testid=nomeEstadoAtual]')
         .contains("concluído")
         .last()
-        .click()
+        .click({force:true})
 })
 
 When(/^verifico se o formulário esta desabilitado$/, () => {
